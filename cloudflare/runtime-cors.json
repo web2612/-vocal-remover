@@ -1,0 +1,25 @@
+{
+  "rules": [
+    {
+      "allowed": {
+        "origins": [
+          "https://vocalremover.group",
+          "https://staging.vocalremover.group"
+        ],
+        "methods": [
+          "GET",
+          "HEAD"
+        ],
+        "headers": [
+          "Range"
+        ]
+      },
+      "exposeHeaders": [
+        "Content-Length",
+        "Content-Range",
+        "ETag"
+      ],
+      "maxAgeSeconds": 3600
+    }
+  ]
+}

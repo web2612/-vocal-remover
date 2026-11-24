@@ -1,0 +1,2 @@
+# Canonical redirect from www to non-www
+https://www.vocalremover.group/* https://vocalremover.group/:splat 301!
