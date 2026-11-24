@@ -1,0 +1,86 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "vocalremover-api-production",
+  "main": "cloudflare/worker.js",
+  "compatibility_date": "2026-11-24",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "vocalremover.group/api/v1/*",
+      "zone_name": "vocalremover.group"
+    }
+  ],
+  "vars": {
+    "SITE_ORIGIN": "https://vocalremover.group",
+    "CLOUD_ENABLED": "false"
+  },
+  "exports": {
+    "JobCoordinator": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    },
+    "Processor": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "JOBS",
+        "class_name": "JobCoordinator"
+      },
+      {
+        "name": "PROCESSOR",
+        "class_name": "Processor"
+      }
+    ]
+  },
+  "containers": [
+    {
+      "class_name": "Processor",
+      "scheduling_policy": "durable_object",
+      "images": {
+        "base": {
+          "dockerfile": "./Dockerfile"
+        }
+      }
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "AUDIO",
+      "bucket_name": "vocalremover-private-production"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "SEPARATION",
+        "queue": "vocalremover-audio-production"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "vocalremover-audio-production",
+        "max_batch_size": 1,
+        "max_batch_timeout": 0,
+        "max_concurrency": 2,
+        "max_retries": 8,
+        "dead_letter_queue": "vocalremover-audio-production-dead"
+      }
+    ]
+  },
+  "triggers": {
+    "crons": [
+      "* * * * *"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "invocation_logs": false
+    }
+  }
+}

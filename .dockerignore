@@ -1,0 +1,8 @@
+**
+!Dockerfile
+!src
+!src/lib
+!src/lib/audio
+!src/lib/audio/**
+!cloudflare
+!cloudflare/container.mjs

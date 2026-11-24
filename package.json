@@ -1,0 +1,42 @@
+{
+  "name": "vocalremover-group",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc -b",
+    "build": "node ./node_modules/typescript/bin/tsc -b && node ./node_modules/vite/bin/vite.js build && node ./node_modules/tsx/dist/cli.mjs scripts/prerender.ts",
+    "build:standard": "tsc -b && vite build && tsx scripts/prerender.ts",
+    "test": "tsx --test tests/audio-and-seo.test.ts",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "lucide-react": "^1.77.0",
+    "mp4box": "^2.5.0",
+    "onnxruntime-web": "^1.31.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.7.0",
+    "ffmpeg-static": "^5.3.0",
+    "oxlint": "^1.90.0",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.6"
+  },
+  "optionalDependencies": {
+    "@esbuild/linux-x64": "^0.28.2",
+    "@oxlint/binding-linux-x64-gnu": "^1.95.0",
+    "@typescript/typescript-linux-x64": "^7.0.2"
+  }
+}
