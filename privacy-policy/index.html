@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy – Browser and Cloud Audio Processing</title>
+    <meta name="description" content="Learn how VocalRemover.group protects your privacy with client-side browser processing, zero server logs, and strict temporary storage rules." />
+    <meta name="keywords" content="AI vocal remover, vocal remover, remove vocals from song, remove vocals from video, remove vocals from music, free vocal remover online, voice remover, separate vocals and instrumentals, karaoke maker, acapella extractor, stem separation" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://vocalremover.group/privacy-policy/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vocalremover.group/privacy-policy/" />
+    <meta property="og:title" content="Privacy Policy – Browser and Cloud Audio Processing" />
+    <meta property="og:description" content="Learn how VocalRemover.group protects your privacy with client-side browser processing, zero server logs, and strict temporary storage rules." />
+    <meta property="og:image" content="https://vocalremover.group/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://vocalremover.group/privacy-policy/" />
+    <meta name="twitter:title" content="Privacy Policy – Browser and Cloud Audio Processing" />
+    <meta name="twitter:description" content="Learn how VocalRemover.group protects your privacy with client-side browser processing, zero server logs, and strict temporary storage rules." />
+    <meta name="twitter:image" content="https://vocalremover.group/og-image.jpg" />
+
+    <!-- Search Engine Verification Placeholders (Replace with your actual verification codes) -->
+    <!-- <meta name="google-site-verification" content="GOOGLE_SEARCH_CONSOLE_VERIFICATION_TOKEN" /> -->
+    <!-- <meta name="msvalidate.01" content="BING_WEBMASTER_VERIFICATION_TOKEN" /> -->
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json" id="jsonld-schema">[{"@context":"https://schema.org","@type":"WebSite","@id":"https://vocalremover.group/#website","name":"VocalRemover.group","url":"https://vocalremover.group/","description":"Free client-side AI vocal remover and stem separation tool online."},{"@context":"https://schema.org","@type":"Organization","@id":"https://vocalremover.group/#organization","name":"VocalRemover.group","url":"https://vocalremover.group/","logo":{"@type":"ImageObject","url":"https://vocalremover.group/logo.svg"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vocalremover.group/"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://vocalremover.group/privacy-policy/"}]}]</script>
+    <script type="module" crossorigin src="/assets/index-ChE3BAbz.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B6T-TtfI.css">
+  </head>
+  <body class="bg-[#070a13] text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"><noscript>
+      <header class="p-8 text-center bg-slate-50 border-b border-slate-200 text-slate-900">
+        <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Privacy Policy</h1>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Browser processing is the default and keeps your audio on your device. When cloud processing is available, the app uploads audio only after you explicitly choose it and confirm the upload.</p>
+        
+      </header>
+      <main class="max-w-4xl mx-auto p-6 space-y-8 text-slate-700">
+    
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">1. Browser and Cloud Audio Separation</h2>
+            <p class="leading-relaxed">In browser mode, the Web Audio API decodes your track. WebGPU or WebAssembly runs the model on your device.</p><p class="leading-relaxed">In cloud mode, Cloudflare temporarily stores the audio in private storage. The service deletes the input when the job ends. The separated tracks are available for up to 15 minutes after completion. A secure session cookie limits job access to the originating browser.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">2. External Model Asset Downloads &amp; Network Disclosures</h2>
+            <p class="leading-relaxed">To perform neural source separation without a paid backend, the browser downloads the open-source HTDemucs model weights (~180.5MB) from an external model host (Hugging Face CDN).</p><p class="leading-relaxed">During this download, the external model CDN receives standard technical network connection information (such as your IP address, browser User-Agent, and requested resource) to deliver the file over HTTPS. No audio data or user files are ever sent to this CDN.</p><p class="leading-relaxed">The browser can save the verified model to CacheStorage and reuse it for subsequent separations.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">3. What Data We Collect (and What We Do Not)</h2>
+            <p class="leading-relaxed">• Cloud jobs use the audio to fulfill your separation request. Browser jobs keep the audio on your device.</p><p class="leading-relaxed">• We DO NOT require user registration, passwords, email signups, or payment details.</p><p class="leading-relaxed">• Web Server Technical Logs: Like all web pages served through Cloudflare Pages, standard edge CDN connection logs are processed for DDoS mitigation and infrastructure security.</p><p class="leading-relaxed">• Email Support: If you contact us at contact@vocalremover.group, your email address is used solely to respond to your technical inquiry and is never sold or used for marketing.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">Browser Storage and Local Caching</h2>
+            <p class="leading-relaxed">The app saves your latest accepted file and its details to IndexedDB so it can be restored within five minutes. The record expires after five minutes and is removed while the app is active or when you next open it. Changing the file or resetting the tool clears the saved record.</p><p class="leading-relaxed">The model cache is separate from the selected file.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">4. Third-Party Services and Analytics</h2>
+            <p class="leading-relaxed">We do not sell, rent, or monetize your personal information or audio files. There are no third-party advertising trackers or invasive behavioral analytics scripts embedded on this website.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">5. Data Security and Web Sandboxing</h2>
+            <p class="leading-relaxed">Web browsers execute client-side JavaScript within a secure sandbox that prevents unauthorized access to your local filesystem. You have full control over the audio files you select, and object URLs are revoked immediately upon session reset.</p>
+          </section>
+        
+      </main>
+      <footer class="p-8 border-t border-slate-200 bg-slate-50 text-center text-xs text-slate-500">
+        <p>© 2026 VocalRemover.group – Client-Side AI Audio Source Separation.</p>
+        <nav class="mt-2 space-x-4">
+          <a href="/" class="text-indigo-600 hover:underline">AI Vocal Remover</a>
+          <a href="/vocal-remover/" class="text-indigo-600 hover:underline">Vocal Extractor</a>
+          <a href="/instrumental-maker/" class="text-indigo-600 hover:underline">Instrumental Maker</a>
+          <a href="/acapella-extractor/" class="text-indigo-600 hover:underline">Acapella Extractor</a>
+          <a href="/karaoke-maker/" class="text-indigo-600 hover:underline">Karaoke Maker</a>
+          <a href="/how-to-remove-vocals/" class="text-indigo-600 hover:underline">How It Works</a>
+          <a href="/privacy-policy/" class="text-indigo-600 hover:underline">Privacy Policy</a>
+          <a href="/terms/" class="text-indigo-600 hover:underline">Terms of Service</a>
+        </nav>
+      </footer>
+    </noscript></div>
+  </body>
+</html>

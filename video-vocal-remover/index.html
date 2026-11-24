@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Vocal Remover – Roadmap &amp; Research in Progress</title>
+    <meta name="description" content="Browser-based video audio demuxing and speech isolation is currently in development. Learn about our technical roadmap and upcoming video codec support." />
+    <meta name="keywords" content="AI vocal remover, vocal remover, remove vocals from song, remove vocals from video, remove vocals from music, free vocal remover online, voice remover, separate vocals and instrumentals, karaoke maker, acapella extractor, stem separation" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://vocalremover.group/video-vocal-remover/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vocalremover.group/video-vocal-remover/" />
+    <meta property="og:title" content="Video Vocal Remover – Roadmap &amp; Research in Progress" />
+    <meta property="og:description" content="Browser-based video audio demuxing and speech isolation is currently in development. Learn about our technical roadmap and upcoming video codec support." />
+    <meta property="og:image" content="https://vocalremover.group/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://vocalremover.group/video-vocal-remover/" />
+    <meta name="twitter:title" content="Video Vocal Remover – Roadmap &amp; Research in Progress" />
+    <meta name="twitter:description" content="Browser-based video audio demuxing and speech isolation is currently in development. Learn about our technical roadmap and upcoming video codec support." />
+    <meta name="twitter:image" content="https://vocalremover.group/og-image.jpg" />
+
+    <!-- Search Engine Verification Placeholders (Replace with your actual verification codes) -->
+    <!-- <meta name="google-site-verification" content="GOOGLE_SEARCH_CONSOLE_VERIFICATION_TOKEN" /> -->
+    <!-- <meta name="msvalidate.01" content="BING_WEBMASTER_VERIFICATION_TOKEN" /> -->
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json" id="jsonld-schema">[{"@context":"https://schema.org","@type":"WebSite","@id":"https://vocalremover.group/#website","name":"VocalRemover.group","url":"https://vocalremover.group/","description":"Free client-side AI vocal remover and stem separation tool online."},{"@context":"https://schema.org","@type":"Organization","@id":"https://vocalremover.group/#organization","name":"VocalRemover.group","url":"https://vocalremover.group/","logo":{"@type":"ImageObject","url":"https://vocalremover.group/logo.svg"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vocalremover.group/"},{"@type":"ListItem","position":2,"name":"AI Video Vocal Remover – Extract Dialogue & Music from Video","item":"https://vocalremover.group/video-vocal-remover/"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which video formats are supported?","acceptedAnswer":{"@type":"Answer","text":"We support standard MP4 (.mp4), WebM (.webm), and QuickTime MOV (.mov) video containers up to 150MB."}},{"@type":"Question","name":"Does my video upload to a remote server?","acceptedAnswer":{"@type":"Answer","text":"No. The video is decoded and processed completely inside your browser's memory sandbox. Zero bytes of video or audio are transmitted across the internet."}},{"@type":"Question","name":"Can I download the video with the vocals removed?","acceptedAnswer":{"@type":"Answer","text":"You download clean, phase-aligned 16-bit master WAV audio files (Vocals and Instrumental). You can replace the audio track in any video editor like Premiere, DaVinci, or CapCut."}}]}]</script>
+    <script type="module" crossorigin src="/assets/index-ChE3BAbz.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B6T-TtfI.css">
+  </head>
+  <body class="bg-[#070a13] text-slate-100 min-h-screen antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"><noscript>
+      <header class="p-8 text-center bg-slate-50 border-b border-slate-200 text-slate-900">
+        <h1 class="text-4xl font-extrabold text-slate-900 mb-4">AI Video Vocal Remover – Extract Dialogue &amp; Music from Video</h1>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">Video container audio demuxing and speech isolation is currently in active browser qualification testing across MP4, WebM, and MOV codec profiles. In the meantime, extract your video audio as MP3 or WAV for 100% reliable local separation.</p>
+        
+      </header>
+      <main class="max-w-4xl mx-auto p-6 space-y-8 text-slate-700">
+    
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">Direct In-Browser Video Vocal &amp; Dialogue Extraction</h2>
+            <p class="leading-relaxed">VocalRemover.group is developing native browser-based video audio demuxing and stem separation. Upload your MP4, WebM, or MOV video clip directly without pre-converting files or uploading large videos to cloud servers.</p><p class="leading-relaxed">Our client-side engine parses the video container, decodes the audio track into floating-point PCM buffers, and executes deep neural source separation to split voice dialogue from background music and sound effects. In the meantime, you can separate audio files right now using our working <a href="/" class="text-indigo-600 hover:underline font-semibold">AI Vocal Remover</a> or <a href="/vocal-remover/" class="text-indigo-600 hover:underline font-semibold">Vocal Remover Tool</a>.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">Isolate Speech for YouTube, TikTok, Reels &amp; Podcasts</h2>
+            <p class="leading-relaxed">Content creators frequently encounter background music that triggers copyright claims or drowns out spoken dialogue. With our upcoming AI Video Vocal Remover, you can isolate clean voiceovers and dialogue for cleaner podcast editing, subtitles, or translation.</p><p class="leading-relaxed">Similarly, you can remove dialogue to preserve background music, ambiance, and Foley effects for creative video remixes and B-roll edits.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">How Client-Side Video Processing Works</h2>
+            <p class="leading-relaxed">1. Video Selection: Select or drop an MP4, WebM, or MOV file (up to 150MB).</p><p class="leading-relaxed">2. Audio Extraction: The browser's HTML5 Web Audio decoder demuxes the AAC or Opus audio stream directly in memory.</p><p class="leading-relaxed">3. Neural Source Separation: Meta AI's HTDemucs neural network evaluates frequency and temporal features to isolate the human voice.</p><p class="leading-relaxed">4. Synchronized Video Playback &amp; Download: Audition the separated stems alongside your video in our dual console, then download 16-bit WAV audio stems.</p>
+          </section>
+        
+          <section class="space-y-3">
+            <h2 class="text-2xl font-bold text-slate-900">Export Lossless Master WAV Audio Stems</h2>
+            <p class="leading-relaxed">Both the voice dialogue stem and background audio track are rendered as uncompressed 16-bit 44.1 kHz linear PCM WAV files. You can drop these stems directly into video editors like Adobe Premiere Pro, DaVinci Resolve, Final Cut Pro, or CapCut for perfect alignment.</p>
+          </section>
+        
+        <section class="space-y-4 pt-6 border-t border-slate-200">
+          <h2 class="text-2xl font-bold text-slate-900">Frequently Asked Questions</h2>
+          <dl class="space-y-4">
+            
+              <div class="space-y-1">
+                <dt class="font-semibold text-slate-900">Which video formats are supported?</dt>
+                <dd class="text-sm text-slate-600">We support standard MP4 (.mp4), WebM (.webm), and QuickTime MOV (.mov) video containers up to 150MB.</dd>
+              </div>
+            
+              <div class="space-y-1">
+                <dt class="font-semibold text-slate-900">Does my video upload to a remote server?</dt>
+                <dd class="text-sm text-slate-600">No. The video is decoded and processed completely inside your browser's memory sandbox. Zero bytes of video or audio are transmitted across the internet.</dd>
+              </div>
+            
+              <div class="space-y-1">
+                <dt class="font-semibold text-slate-900">Can I download the video with the vocals removed?</dt>
+                <dd class="text-sm text-slate-600">You download clean, phase-aligned 16-bit master WAV audio files (Vocals and Instrumental). You can replace the audio track in any video editor like Premiere, DaVinci, or CapCut.</dd>
+              </div>
+            
+          </dl>
+        </section>
+      
+      </main>
+      <footer class="p-8 border-t border-slate-200 bg-slate-50 text-center text-xs text-slate-500">
+        <p>© 2026 VocalRemover.group – Client-Side AI Audio Source Separation.</p>
+        <nav class="mt-2 space-x-4">
+          <a href="/" class="text-indigo-600 hover:underline">AI Vocal Remover</a>
+          <a href="/vocal-remover/" class="text-indigo-600 hover:underline">Vocal Extractor</a>
+          <a href="/instrumental-maker/" class="text-indigo-600 hover:underline">Instrumental Maker</a>
+          <a href="/acapella-extractor/" class="text-indigo-600 hover:underline">Acapella Extractor</a>
+          <a href="/karaoke-maker/" class="text-indigo-600 hover:underline">Karaoke Maker</a>
+          <a href="/how-to-remove-vocals/" class="text-indigo-600 hover:underline">How It Works</a>
+          <a href="/privacy-policy/" class="text-indigo-600 hover:underline">Privacy Policy</a>
+          <a href="/terms/" class="text-indigo-600 hover:underline">Terms of Service</a>
+        </nav>
+      </footer>
+    </noscript></div>
+  </body>
+</html>
